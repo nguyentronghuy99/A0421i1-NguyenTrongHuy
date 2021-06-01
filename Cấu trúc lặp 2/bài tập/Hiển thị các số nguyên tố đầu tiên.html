@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // function isPrime(num) {
+    //     let temp = true;
+    //     for (let i = 2; i <= Math.sqrt(num); i++) {
+    //         if (num % i == 0) {
+    //            temp = false;
+    //            break;
+    //         }
+    //     }
+    //     if(temp) {
+    //         alert(num+" là số nguyên tố")
+    //     } else {
+    //         alert(num+" Không phải là số nguyên tố")
+    //     }
+    //
+    // }
+    let num = 2;
+    let count = 0;
+    while (count < 5) {
+        let temp = true;
+        for (let i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0) {
+                temp = false;
+                break;
+            }
+        }
+        if (temp) {
+            alert(num + " là số nguyên tố")
+            count++;
+        }
+        num++;
+    }
+</script>
+</body>
+</html>
